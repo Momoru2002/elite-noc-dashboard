@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elite NOC Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="sidebar">NOC</div>
+<div class="main">
+<h1>Home Server Command Center</h1>
+<div class="cards">
+ <div class="card"><label>Hostname</label><h3 id="hostname"></h3></div>
+ <div class="card"><label>IP</label><h3 id="ip"></h3></div>
+ <div class="card"><label>OS</label><h3 id="os"></h3></div>
+ <div class="card"><label>Cores</label><h3 id="cores"></h3></div>
+</div>
+<div class="grid">
+ <div class="panel"><canvas id="gauge"></canvas></div>
+ <div class="panel"><canvas id="traffic"></canvas></div>
+ <div class="panel"><canvas id="usage"></canvas></div>
+ <div class="panel"><canvas id="resource"></canvas></div>
+</div>
+</div>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
